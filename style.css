@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.imagem_preview {
+    height: 250px;
+    width: 186px;
+    padding: 1% 2%;
+}
+
+body {
+    height: 100vh;
+    background-image: url('./img/fundo\ escuro.jpg');
+    background-size: 100%;
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgb(94, 3, 3),red);
+    color: white;
+    height: 14vh;
+    font-size: 2rem;
+    padding-left: 2%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
