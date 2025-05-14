@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *{
     margin: 0;
@@ -6,28 +6,62 @@
 }
 
 .imagem_preview {
-    height: 250px;
-    width: 186px;
+    height: 240px;
+    width: 180px;
     padding: 1% 2%;
+}
+
+.galeria {
+    display: grid;
+    grid-template-rows: repeat(2, auto); 
+    grid-auto-flow: column; 
+    gap: 20px;
+    justify-content: center; 
+    align-items: center;
+    padding: 19px;
+    height: calc(100vh - 20vh);
+}
+
+.menu-direita {
+    display: flex;
+    justify-content: flex-end; /* Alinha à direita */
+    gap: 20px; /* Espaço entre as palavras */
+    padding: 20px;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    color: black;
 }
 
 body {
     height: 100vh;
-    background-image: url('./img/fundo\ escuro.jpg');
+    background-image: url('./img/fundo-escuro.jpg');
     background-size: 100%;
     font-size: 2rem;
 }
 
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    background: linear-gradient(rgb(94, 3, 3),red);
+    background: rgb(217, 3, 3);
     color: white;
     height: 14vh;
     font-size: 2rem;
-    padding-left: 2%;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+    padding-left: 0 2%;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    padding-left: 30px; 
+}  
+
+.menu-direita {
+    display: flex;
+    gap: 20px;
+    font-size: 1.4rem;
+    padding-right: 30px;
+}
+
+.texto-negrito {
+    font-weight: bold;
 }
