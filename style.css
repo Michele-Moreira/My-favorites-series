@@ -29,7 +29,7 @@
     padding: 20px;
     font-size: 1.5rem;
     font-family: "Inter", sans-serif;
-    color: black;
+    color: #1D1616;
 }
 
 body {
@@ -43,7 +43,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(217, 3, 3);
+    background: #E52020;
     color: white;
     height: 14vh;
     font-size: 2rem;
@@ -64,4 +64,11 @@ header {
 
 .texto-negrito {
     font-weight: bold;
+    margin-left: 5px;
+    cursor: 'pointer';
+    transform: color 0.3s ease;
+}
+
+.texto-negrito:hover {
+  color: #EEEEEE; /* ou outra cor que preferir */
 }
