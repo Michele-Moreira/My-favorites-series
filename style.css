@@ -72,3 +72,12 @@ header {
 .texto-negrito:hover {
   color: #EEEEEE; /* ou outra cor que preferir */
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+}
