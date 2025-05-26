@@ -1,51 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-}
-
-.imagem_preview {
-    border: 2px solid transparent;
-    border-radius: 15px;
-    transition: transform 0.3s ease, border 0.3s ease;
-    cursor: pointer;
-    height: 240px;
-    width: 180px;
-    padding: 1% 2%;
-}
-
-.imagem_preview:hover {
-    border: 2px solid white;
-    transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
-}
-
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    padding: 20px;
-}
-
-.menu-direita {
-    display: flex;
-    justify-content: flex-end; /* Alinha à direita */
-    gap: 20px; /* Espaço entre as palavras */
-    padding: 20px;
-    font-size: 1.5rem;
-    font-family: "Inter", sans-serif;
-    color: #1D1616;
+    box-sizing: border-box;
 }
 
 body {
     height: 100vh;
     background-image: url('./img/fundo-escuro.jpg');
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     font-size: 2rem;
+    font-family: "Inter", sans-serif;
 }
 
+/* ========== HEADER ========== */
 header {
     display: flex;
     justify-content: space-between;
@@ -54,52 +24,73 @@ header {
     color: white;
     height: 14vh;
     font-size: 1.5rem;
-    padding-left: 2%;
-    font-family: "Inter", sans-serif;
-}
-
-header {
-    padding-left: 30px; 
-}  
-
-.menu-direita {
-    justify-content: center;
-    display: flex;
-    gap: 10px;
-    font-size: 1rem;
-    padding: 30px;
+    padding: 0 30px;
 }
 
 .texto-negrito {
     font-weight: bold;
-    margin-left: 5px;
-    cursor: 'pointer';
-    transform: color 0.3s ease;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .texto-negrito:hover {
-  color: #EEEEEE; /* ou outra cor que preferir */
+    color: #EEEEEE;
+}
+
+/* ========== MENU DIREITA ========== */
+.menu-direita {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 1.5rem;
+    color: #1D1616;
+}
+
+/* ========== GALERIA DE SÉRIES ========== */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.imagem_preview {
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 240px;
+    width: 180px;
+    object-fit: cover;
+}
+
+.imagem_preview:hover {
+    border: 2px solid white;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: auto;
-    padding: 20px;
-  }
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
 
-  .imagem_preview {
-    height: 200px;
-    width: 140px;
-    padding: 0;
-  }
+    .menu-direita {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 1rem;
+        padding: 10px 0;
+    }
 
-  .menu-direita {
-    flex-direction: column;
-    gap: 10px;
-    font-size: 1rem;
-    padding: 10px;
-  }
+    .imagem_preview {
+        height: 200px;
+        width: 140px;
+        padding: 0;
+    }
 }
