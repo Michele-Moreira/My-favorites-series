@@ -57,8 +57,8 @@ header {
 
 .imagem_preview {
     border: 2px solid transparent;
-    border-radius: 15px;
-    transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 13px;
+    transition: transform 0.5s ease, border 0.4s ease, box-shadow 0.3s ease;
     cursor: pointer;
     height: 240px;
     width: 180px;
@@ -66,7 +66,7 @@ header {
 }
 
 .imagem_preview:hover {
-    border: 2px solid white;
+    border: 3px solid white;
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
