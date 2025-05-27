@@ -8,7 +8,7 @@
 
 body {
     height: 100vh;
-    background-image: url('./img/fundo-escuro.jpg');
+    background: #16161a;
     background-size: cover;
     background-position: center;
     font-size: 2rem;
@@ -20,8 +20,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #D90303FF;
-    color: white;
+    background: #8234e9;;
+    color: #e1e1e6;;
     height: 14vh;
     font-size: 1.5rem;
     padding: 0 30px;
