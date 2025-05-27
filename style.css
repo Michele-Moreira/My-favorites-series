@@ -147,13 +147,6 @@ header {
     }
 }
 
-/* Tema Padrão: escuro */
-body {
-    background-color: #111;
-    color: #eee;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
 .modo-btn {
     background: none;
     border: none;

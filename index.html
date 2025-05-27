@@ -86,23 +86,29 @@
     </button>
 
     <script>
-            const toggleBtn = document.getElementById('modo-toggle');
-            const body = document.body;
+        const toggleBtn = document.getElementById('modo-toggle');
+        const icon = toggleBtn.querySelector('i');
+        const body = document.body;
 
-            const modoSalvo = localStorage.getItem('modo');
-            if (modoSalvo === 'claro') {
-                body.classList.add('modo-claro');
-                toggleBtn.textContent = '🌞';
-            }
+  // Inicializa os ícones
+    lucide.createIcons();
 
-        toggleBtn.addEventListener('click', () => {
-            body.classList.toggle('modo-claro');
-            const modoAtual = body.classList.contains('modo-claro') ? 'claro' : 'escuro';
-            toggleBtn.textContent = modoAtual === 'claro' ? '🌞' : '🌙';
-            localStorage.setItem('modo', modoAtual);
-            });
-</script>
+  // Aplica modo salvo
+        const modoSalvo = localStorage.getItem('modo');
+         if (modoSalvo === 'claro') {
+        body.classList.add('modo-claro');
+        icon.setAttribute('data-lucide', 'sun');
+        lucide.createIcons(); // Atualiza o ícone
+    }
 
+    toggleBtn.addEventListener('click', () => {
+        body.classList.toggle('modo-claro');
+        const modoAtual = body.classList.contains('modo-claro') ? 'claro' : 'escuro';
+        icon.setAttribute('data-lucide', modoAtual === 'claro' ? 'sun' : 'moon');
+        localStorage.setItem('modo', modoAtual);
+        lucide.createIcons(); // Atualiza o ícone
+    });
+    </script>
 
 </body>
 </html>
