@@ -104,6 +104,11 @@ header {
     text-align: center;
 }
 
+.botao-voltar a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .descricao-serie {
     max-width: 600px;
     margin-top: 20px;
