@@ -79,6 +79,26 @@
 
     </div>   
 
+    <button id="modo-toggle" class="modo-btn">🌙</button>
+
+    <script>
+            const toggleBtn = document.getElementById('modo-toggle');
+            const body = document.body;
+
+            const modoSalvo = localStorage.getItem('modo');
+            if (modoSalvo === 'claro') {
+                body.classList.add('modo-claro');
+                toggleBtn.textContent = '🌞';
+            }
+
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('modo-claro');
+            const modoAtual = body.classList.contains('modo-claro') ? 'claro' : 'escuro';
+            toggleBtn.textContent = modoAtual === 'claro' ? '🌞' : '🌙';
+            localStorage.setItem('modo', modoAtual);
+            });
+</script>
+
 
 </body>
 </html>
