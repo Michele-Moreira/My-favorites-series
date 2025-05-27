@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background: #8234e9;;
-    color: #e1e1e6;;
+    color: #e1e1e6;
     height: 14vh;
     font-size: 1.5rem;
     padding: 0 30px;
@@ -34,7 +34,7 @@ header {
 }
 
 .texto-negrito:hover {
-    color: #EEEEEE;
+    color: #e1e1e6;
 }
 
 /* ========== MENU DIREITA ========== */
@@ -66,7 +66,7 @@ header {
 }
 
 .imagem_preview:hover {
-    border: 3px solid white;
+    border: 3px solid #e1e1e6;
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
@@ -100,7 +100,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
-    color: white;
+    color: #e1e1e6;;
     text-align: center;
 }
 
