@@ -139,8 +139,9 @@ header {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 16px;
-    padding: 20px 40px; /* <- margem lateral maior */
-    justify-content: flex-start;
+    justify-content: center; 
+    padding: 20px 24px;
+    scroll-padding-left: 24px; /* Ajuda no snap centralizado */
   }
 
   .imagem_preview {
@@ -151,3 +152,4 @@ header {
     border-radius: 12px;
   }
 }
+ 
