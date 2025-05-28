@@ -139,29 +139,15 @@ header {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 16px;
-    padding: 20px;
+    padding: 20px 40px; /* <- margem lateral maior */
+    justify-content: flex-start;
   }
 
   .imagem_preview {
     flex: 0 0 auto;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     width: 160px;
     height: 220px;
     border-radius: 12px;
-    transition: transform 0.3s ease;
-  }
-
-  .imagem_preview:hover {
-    transform: scale(1.05);
-  }
-
-  /* Esconde a barra de rolagem em navegadores modernos */
-  .galeria::-webkit-scrollbar {
-    display: none;
-  }
-
-  .galeria {
-    -ms-overflow-style: none;  /* IE/Edge */
-    scrollbar-width: none;     /* Firefox */
   }
 }
