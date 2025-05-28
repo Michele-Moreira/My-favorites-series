@@ -133,37 +133,35 @@ header {
 }
 
 @media (max-width: 768px) {
-    .descricao-serie h2 {
-        font-size: 1.8rem;
-    }
-
-    .descricao-serie p {
-        font-size: 1rem;
-    }
-
-    .imagem_preview {
-        width: 140px;
-        height: 200px;
-    }
-}
-
-.modo-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
-    border-radius: 10px;
-    transition: background 0.3s ease;
+  .galeria {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 20px;
+  }
 
-body.modo-claro .modo-btn {
-    color: black;
-}
+  .imagem_preview {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 160px;
+    height: 220px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
 
-.modo-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
+  .imagem_preview:hover {
+    transform: scale(1.05);
+  }
+
+  /* Esconde a barra de rolagem em navegadores modernos */
+  .galeria::-webkit-scrollbar {
+    display: none;
+  }
+
+  .galeria {
+    -ms-overflow-style: none;  /* IE/Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
 }
