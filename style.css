@@ -13,6 +13,10 @@
     --cor-borda: #e1e1e6;
 }
 
+a{
+    max-width: fit-content;
+}
+
 body {
     height: 100vh;
     background: var(--cor-fundo);
@@ -136,7 +140,7 @@ header {
   .galeria {
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
+    flex-wrap: wrap;
     scroll-snap-type: x mandatory;
     gap: 16px;
     justify-content: center; 
