@@ -36,7 +36,6 @@ header {
     height: 14vh;
     font-size: 1.5rem;
     padding: 0 30px;
-    border-bottom: 1px solid #8656c5;
 }
 
 .texto-negrito {
@@ -119,7 +118,6 @@ header {
 }
 
 .botao-voltar a, a:visited, a:hover, a:active {
-    text-decoration: none;
     color: inherit;
 }
 
