@@ -36,9 +36,12 @@ header {
     height: 14vh;
     font-size: 1.5rem;
     padding: 0 30px;
+    border-bottom: 1px solid #8656c5;
 }
 
 .texto-negrito {
+    text-decoration: none;
+    padding: 5px;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -50,8 +53,7 @@ header {
 
 /* ========== MENU DIREITA ========== */
 .menu-direita {
-    display: flex;
-    justify-content: flex-end;
+    float: right;
     gap: 20px;
     font-size: 1.3rem;
     color: var(--cor-texto)
