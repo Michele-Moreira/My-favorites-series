@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import type { Serie } from '../types/serie'
 
 type Props = {
@@ -6,12 +7,16 @@ type Props = {
 
 function SerieCard({ serie }: Props) {
   return (
-    <img
-      className="imagem_preview"
-      src={serie.imagem}
-      alt={`Capa da série ${serie.titulo}`}
-    />
+    <Link to={`/serie/${serie.slug}`}>
+      <img
+        className="imagem_preview"
+        src={serie.imagem}
+        alt={`Capa da série ${serie.titulo}`}
+      />
+    </Link>
   )
 }
 
 export default SerieCard
+ 
+
