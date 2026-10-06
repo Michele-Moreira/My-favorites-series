@@ -156,3 +156,34 @@ header {
     border-radius: 12px;
   }
 }
+/* ========== FILTROS ========== */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 24px 20px 0;
+}
+
+.filtros input,
+.filtros select {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 2px solid var(--cor-destaque);
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+.filtros input {
+    flex: 1;
+    max-width: 400px;
+}
+
+.sem-resultado {
+    color: var(--cor-texto);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 40px 20px;
+}
