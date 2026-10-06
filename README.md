@@ -1,75 +1,55 @@
-# React + TypeScript + Vite
+# 🎬 Minhas Séries Favoritas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Galeria com as séries que eu mais gosto, com página de detalhe para cada uma, busca e filtro por gênero.
 
-Currently, two official plugins are available:
+🔗 **Acesse:** https://my-favorites-series.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Galeria de séries](docs/preview.jpeg)
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Galeria com as capas de 14 séries
+- Página de detalhe para cada série, com gênero, sinopse, temporadas, ano e nota no IMDB
+- Busca pelo nome da série, que funciona com ou sem acento ("invencivel" encontra "Invencível")
+- Filtro por gênero, que pode ser combinado com a busca
+- Layout responsivo, do celular ao desktop
 
-## Expanding the ESLint configuration
+## Antes e depois
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Este foi o meu primeiro projeto, feito em 2025 só com HTML e CSS. Cada série tinha a sua própria página, então
+eram 14 arquivos HTML praticamente iguais, onde só mudava o conteúdo. Para colocar uma série nova, eu precisava
+criar mais um arquivo e mexer na galeria à mão.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Em 2026 eu refiz o projeto em React. Hoje os dados das séries ficam em uma lista só, e **um** componente monta a
+página de qualquer série a partir do endereço (`/serie/loki`, `/serie/silo`...). Para adicionar uma série nova,
+basta acrescentar uma entrada na lista. Aproveitei para incluir o que a versão antiga não tinha: busca e filtro.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+A primeira versão está guardada na pasta [`legacy/`](legacy/), e o CSS dela continua sendo a base do visual.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Tecnologias
 
-```
+- React + TypeScript
+- Vite
+- React Router
+- CSS puro (flex-box e grid)
+- Deploy na Vercel
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## O que aprendi
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Separar os dados da tela:** criar um `type` para a série me fez pensar no formato de cada informação.
+  O gênero virou uma lista para poder filtrar, e a nota virou número para poder ordenar.
+- **Componentes e listas:** com `.map()`, um único `SerieCard` substitui as 14 capas escritas à mão. Também
+  entendi para que serve o `key` e por que ele precisa ser único.
+- **Estado com `useState`:** a busca e o filtro guardam o que a pessoa digitou ou escolheu, e a galeria se
+  atualiza sozinha a cada mudança.
+- **Rotas:** com o React Router, o endereço da página (`:slug`) diz qual série mostrar. Também aprendi que a
+  Vercel precisa de um `vercel.json` para não dar erro 404 quando alguém abre esse endereço direto.
+- **TypeScript como rede de segurança:** ele avisou na hora quando eu usei um campo que não existia. Mas ele
+  não confere se uma imagem existe de verdade, e isso eu aprendi testando.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Como rodar no seu computador
 
+```bash
+npm install
+npm run dev
 ```
