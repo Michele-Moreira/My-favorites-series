@@ -1,14 +1,10 @@
 import { useState } from 'react'
 import { series } from '../data/series'
 import SerieCard from './SerieCard'
+import { semAcento } from '../utils/semAcento'
 
 const generos = [...new Set(series.flatMap((serie) => serie.genero))].sort()
-function semAcento(texto: string) {
-  return texto
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-}
+
 function Galeria() {
   const [busca, setBusca] = useState('')
   const [genero, setGenero] = useState('')
