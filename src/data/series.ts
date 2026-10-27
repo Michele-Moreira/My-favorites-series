@@ -94,7 +94,7 @@ export const series: Serie[] = [
   {
     slug: 'operacao-lioness',
     titulo: 'Operação Lioness',
-    imagem: '/img/operacao-lioness.avif',
+    imagem: '/img/operacao-lioness.jpg',
     genero: ['Drama', 'Espionagem', 'Ação'],
     sinopse: 'Em Operação Lioness, uma fuzileira naval marcada por traumas está determinada a fazer de tudo para derrubar uma organização terrorista. Na série produzida por Nicole Kidman e Zoe Saldana, Cruz Manuelos (Laysla de Oliveira) é recrutada pela CIA para se infiltrar entre as mulheres de terroristas. Para sobreviver a diversas situações de vida ou morte e evitar ao máximo erros que podem custar sua própria segurança, e do país, ela é treinada e orientada por Joe (Zoe Saldana), a chefe da Operação Lioness.',
     temporadas: 2,
