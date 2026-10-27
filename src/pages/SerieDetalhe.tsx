@@ -1,32 +1,25 @@
-import { Link, useParams } from 'react-router'
-import { series } from '../data/series'
+import { Navigate, useParams } from 'react-router'
+import { favoritas } from '../data/favoritas'
+import FichaSerie from '../components/FichaSerie'
+import MensagemErro from '../components/MensagemErro'
 
 function SerieDetalhe() {
-  const { slug } = useParams()
-  const serie = series.find((s) => s.slug === slug)
+  const { id } = useParams()
+  const idNumerico = Number(id)
 
-  if (!serie) {
-    return <p className="detalhes-container">Série não encontrada.</p>
+  // Endereço antigo (/serie/loki): troca pelo novo (/serie/84958) sem deixar o antigo no histórico
+  if (Number.isNaN(idNumerico)) {
+    const favorita = favoritas.find((f) => f.slug === id)
+
+    if (!favorita) {
+      return <MensagemErro mensagem="Série não encontrada." />
+    }
+
+    return <Navigate to={`/serie/${favorita.id}`} replace />
   }
 
-  return (
-    <main className="detalhes-container">
-      <img
-        className="imagem_preview"
-        src={serie.imagem}
-        alt={`Capa da série ${serie.titulo}`}
-      />
-      <div className="descricao-serie">
-        <h2>{serie.titulo}</h2>
-        <p><strong>Gênero:</strong> {serie.genero.join(', ')}</p>
-        <p><strong>Sinopse:</strong> {serie.sinopse}</p>
-        <p><strong>Temporadas:</strong> {serie.temporadas}</p>
-        <p><strong>Ano de Lançamento:</strong> {serie.ano}</p>
-        <p><strong>Nota:</strong> {serie.nota.toLocaleString('pt-BR')} no IMDB</p>
-      </div>
-      <Link className="texto-negrito" to="/">Voltar</Link>
-    </main>
-  )
+  // A key faz a ficha começar do zero ao trocar de série
+  return <FichaSerie key={idNumerico} id={idNumerico} />
 }
 
 export default SerieDetalhe

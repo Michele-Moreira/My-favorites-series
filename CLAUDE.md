@@ -20,10 +20,12 @@ React 19 + TypeScript + Vite · React Router 7 (modo declarativo) · CSS puro ·
 
 | Caminho | O que é |
 |---|---|
-| `src/types/serie.ts` | `type Serie`, o formato de cada série |
-| `src/data/series.ts` | a lista das 14 séries (fonte única dos dados) |
+| `src/types/serie.ts` | `type Serie` (galeria) e `type Favorita` (série ligada ao TMDB) |
+| `src/data/series.ts` | as séries da galeria, com gênero pro filtro (sai no passo 11) |
+| `src/data/favoritas.ts` | as mesmas séries com o `id` do TMDB, na ordem da galeria |
 | `src/components/` | `Header`, `Galeria` (busca + filtro + `.map()`), `SerieCard` |
-| `src/pages/SerieDetalhe.tsx` | página de uma série, rota `/serie/:slug` |
+| `src/pages/SerieDetalhe.tsx` | rota `/serie/:id`; endereço antigo com slug redireciona pro id |
+| `src/components/FichaSerie.tsx` | a página da série com dados do TMDB (`useSerie`) |
 | `src/index.css` | todo o estilo, vindo do CSS de 2025 |
 | `public/img/` | capas das séries |
 | `legacy/` | a primeira versão em HTML (2025), guardada como "antes" — não editar |
