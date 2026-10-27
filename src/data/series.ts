@@ -141,4 +141,44 @@ export const series: Serie[] = [
     ano: 2019,
     nota: 8.6
   },
+  {
+    slug: 'the-legend-of-vox-machina',
+    titulo: 'The Legend of Vox Machina',
+    imagem: '/img/vox-machina.jpg',
+    genero: ['Animação', 'Ação', 'Aventura', 'Fantasia'],
+    sinopse: 'Desordeiros e maltrapilhos, são desajustados que viraram mercenários. O grupo Vox Machina está mais interessado em dinheiro fácil e cerveja barata do que em proteger o reino. Mas quando o reino é ameaçado pelo mal, esses encrenqueiros percebem que são os únicos capazes de restaurar a justiça. O que começou como um serviço simples agora é a história de origem dos mais novos heróis de Exandria.',
+    temporadas: 4,
+    ano: 2022,
+    nota: 8.4
+  },
+  {
+    slug: 'attack-on-titan',
+    titulo: 'Attack on Titan',
+    imagem: '/img/attack-on-titan.jpg',
+    genero: ['Animação', 'Ação', 'Aventura', 'Fantasia'],
+    sinopse: 'Titãs estão quase exterminando a raça humana. Porém alguns estão dispostos a formar um exército de ataque aos seres assassinos. O jovem Eren, após ver sua mãe ser devorada por um titã, decide que não deixará nenhum deles vivo e buscará sua vingança completa.',
+    temporadas: 4,
+    ano: 2013,
+    nota: 9.1
+  },
+  {
+    slug: 'demon-slayer',
+    titulo: 'Demon Slayer',
+    imagem: '/img/demon-slayer.jpg',
+    genero: ['Animação', 'Ação', 'Aventura', 'Fantasia'],
+    sinopse: 'Japão, era Taisho. Tanjiro, um bondoso jovem que ganha a vida vendendo carvão, descobre que sua família foi massacrada por um demônio. E pra piorar, Nezuko, sua irmã mais nova e única sobrevivente, também foi transformada num demônio. Arrasado com esta sombria realidade, Tanjiro decide se tornar um matador de demônios para fazer sua irmã voltar a ser humana, e para matar o demônio que matou sua família.',
+    temporadas: 5,
+    ano: 2019,
+    nota: 8.6
+  },
+  {
+    slug: 'castlevania-noturno',
+    titulo: 'Castlevania: Noturno',
+    imagem: '/img/castlevania-noturno.jpg',
+    genero: ['Animação', 'Drama', 'Fantasia', 'Terror'],
+    sinopse: 'Enquanto a revolução assola a França, Richter Belmont luta para manter o legado da família e impedir a ascensão de uma vampira brutal e gananciosa.',
+    temporadas: 2,
+    ano: 2023,
+    nota: 7.5
+  },
 ]
