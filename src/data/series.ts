@@ -4,7 +4,7 @@ export const series: Serie[] = [
   {
     slug: 'the-vampire-diaries',
     titulo: 'The Vampire Diaries',
-    imagem: '/img/tvd.jfif',
+    imagem: '/img/tvd.jpg',
     genero: ['Drama', 'Romance', 'Sobrenatural'],
     sinopse: 'A adolescente Elena se vê dividida entre dois irmãos vampiros — Stefan e Damon — enquanto lida com segredos obscuros e forças sobrenaturais.',
     temporadas: 8,
@@ -24,7 +24,7 @@ export const series: Serie[] = [
   {
     slug: 'hemlock-grove',
     titulo: 'Hemlock Grove',
-    imagem: '/img/hemlock-grove.jfif',
+    imagem: '/img/hemlock-grove.jpg',
     genero: ['Terror', 'Suspense'],
     sinopse: 'Hemlock Grove é uma série de suspense sobrenatural que se passa na sombria e misteriosa cidade de Hemlock Grove, na Pensilvânia. A trama começa com o brutal assassinato de uma jovem, o que abala a comunidade e dá início a uma investigação repleta de segredos e criaturas sobrenaturais.',
     temporadas: 3,
@@ -34,7 +34,7 @@ export const series: Serie[] = [
   {
     slug: 'the-walking-dead',
     titulo: 'The Walking Dead',
-    imagem: '/img/twd.jfif',
+    imagem: '/img/twd.jpg',
     genero: ['Terror', 'Drama', 'Apocalipse zumbi'],
     sinopse: 'Baseado na história em quadrinhos escrita por Robert Kirkman, este drama potente e visceral retrata a vida nos Estados Unidos pós-apocalíptico. Um grupo de sobreviventes, liderado pelo policial Rick Grimes, segue viajando em busca de uma nova moradia segura e distante dos mortos-vivos.',
     temporadas: 11,
@@ -44,7 +44,7 @@ export const series: Serie[] = [
   {
     slug: 'peaky-blinders',
     titulo: 'Peaky Blinders',
-    imagem: '/img/peaky-blinders.jfif',
+    imagem: '/img/peaky-blinders.jpg',
     genero: ['Ficção Histórica', 'Crime', 'Drama'],
     sinopse: 'Peaky Blinders é uma série de TV britânica que se passa na década de 1920 em Birmingham, Inglaterra, e acompanha a família Shelby, uma gangue criminosa liderada pelo ambicioso e carismático Thomas "Tommy" Shelby.',
     temporadas: 6,
@@ -54,7 +54,7 @@ export const series: Serie[] = [
   {
     slug: 'breaking-bad',
     titulo: 'Breaking Bad',
-    imagem: '/img/breaking-bad.jfif',
+    imagem: '/img/breaking-bad.jpg',
     genero: ['Ação', 'Suspense', 'Drama', 'Crime', 'Humor Negro'],
     sinopse: 'Breaking Bad é a história de Walter White, um professor de química no ensino médio, que é diagnosticado com câncer terminal. Para garantir o futuro da sua família, ele se junta ao seu ex-aluno Jesse Pinkman e passa a produzir e distribuir metanfetamina.',
     temporadas: 5,
@@ -104,7 +104,7 @@ export const series: Serie[] = [
    {
     slug: 'wandavision',
     titulo: 'WandaVision',
-    imagem: '/img/wandavision.jfif',
+    imagem: '/img/wandavision.jpg',
     genero: ['Ação', 'Comédia', 'Fantasia'],
     sinopse: 'Após os eventos de Vingadores: Ultimato (2019), Wanda Maximoff/Feiticeira Escarlate (Elizabeth Olsen) e Visão (Paul Bettany) se esforçam para levar uma vida normal no subúrbio e esconder seus poderes. Mas a dupla de super-heróis logo começa a suspeitar que nem tudo está tão certo assim. Eles se encontram, na verdade, dentro de uma constante sitcom, que vai desde a década de 50 até os dias de hoje. Conforme o tempo passa, Wanda e Visão perdem o controle da situação, sem saber mais o que é real e o que é ficção. Eles ficam presos em um eterno vai e vem.',
     temporadas: 1,
@@ -114,7 +114,7 @@ export const series: Serie[] = [
   {
     slug: 'loki',
     titulo: 'Loki',
-    imagem: '/img/loki.jfif',
+    imagem: '/img/loki.jpg',
     genero: ['Ação', 'Aventura', 'Ficção Científica'],
     sinopse: 'Após roubar o Tesseract durante os eventos de Vingadores: Ultimato, Loki é capturado pela Autoridade de Variância Temporal, uma organização burocrática que existe fora do tempo e espaço, e que monitora a linha do tempo. Eles oferecem a Loki uma escolha: ser apagado da existência por perturbar o tempo ou ajudá-los a consertar a linha do tempo e impedir uma ameaça ainda maior.',
     temporadas: 2,
@@ -124,7 +124,7 @@ export const series: Serie[] = [
   {
     slug: 'invencivel',
     titulo: 'Invencível',
-    imagem: '/img/invencivel.jfif',
+    imagem: '/img/invencivel.jpg',
     genero: ['Ação', 'Aventura', 'Animação', 'Fantasia'],
     sinopse: 'Baseada na série homônima de quadrinhos criada por Robert Kirkman (The Walking Dead), Invencível acompanha Mark Grayson, um adolescente que tenta levar uma vida comum, exceto por um pequeno detalhe: ele é filho do super-herói mais poderoso da Terra.',
     temporadas: 2,
@@ -134,7 +134,7 @@ export const series: Serie[] = [
    {
     slug: 'the-boys',
     titulo: 'The Boys',
-    imagem: '/img/the-boys.jfif',
+    imagem: '/img/the-boys.jpg',
     genero: ['Ação', 'Drama', 'Ficção Científica'],
     sinopse: 'Em The Boys, quando a fama sobe à cabeça, alguns super-heróis passam a se corromper e usar seu status para se promoverem ainda mais, o que pode colocar em risco a própria população. Uma equipe independente de foras-da-lei, então, se prepara para cuidar do caso. Conhecidos como "Os Meninos", Billy Butcher (Karl Urban) e seus companheiros têm a missão de vigiar o trabalho dessas personalidades, assim como controlar o surgimento de novos heróis.',
     temporadas: 4,
