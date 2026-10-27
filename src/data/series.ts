@@ -42,6 +42,16 @@ export const series: Serie[] = [
     nota: 8.1
   },
   {
+    slug: 'peaky-blinders',
+    titulo: 'Peaky Blinders',
+    imagem: '/img/peaky-blinders.jpg',
+    genero: ['Ficção Histórica', 'Crime', 'Drama'],
+    sinopse: 'Peaky Blinders é uma série de TV britânica que se passa na década de 1920 em Birmingham, Inglaterra, e acompanha a família Shelby, uma gangue criminosa liderada pelo ambicioso e carismático Thomas "Tommy" Shelby.',
+    temporadas: 6,
+    ano: 2013,
+    nota: 8.7
+  },
+  {
     slug: 'breaking-bad',
     titulo: 'Breaking Bad',
     imagem: '/img/breaking-bad.jpg',
