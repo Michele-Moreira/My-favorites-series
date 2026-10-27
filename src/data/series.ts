@@ -64,7 +64,7 @@ export const series: Serie[] = [
   {
     slug: 'origem',
     titulo: 'Origem',
-    imagem: '/img/origem.jfif',
+    imagem: '/img/origem.jpg',
     genero: ['Terror', 'Ficção Científica'],
     sinopse: 'A série gira em torno de uma família que, durante uma viagem de trailer, se perde e entra em uma cidade misteriosa no interior dos Estados Unidos. Eles logo descobrem que a cidade os aprisiona e que ninguém que entra consegue sair, sendo constantemente ameaçados por criaturas monstruosas que surgem à noite.',
     temporadas: 3,
@@ -84,7 +84,7 @@ export const series: Serie[] = [
    {
     slug: 'silo',
     titulo: 'Silo',
-    imagem: '/img/silo.jpg',
+    imagem: '/img/silo-2023.jpg',
     genero: ['Distopia', 'Drama', 'Ficção Científica'],
     sinopse: 'Silo é uma série distópica de ficção científica que se passa num futuro pós-apocalíptico, onde a humanidade sobrevive em um silo subterrâneo devido à toxicidade da superfície. A série acompanha Juliette, uma engenheira que, ao investigar a morte de um colega, descobre segredos chocantes sobre o silo e as regras que governam a vida dentro dele.',
     temporadas: 2,
