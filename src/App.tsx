@@ -9,7 +9,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Galeria />} />
-        <Route path="/serie/:slug" element={<SerieDetalhe />} />
+        <Route path="/serie/:id" element={<SerieDetalhe />} />
       </Routes>
     </>
   )
