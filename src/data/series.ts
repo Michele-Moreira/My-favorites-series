@@ -42,16 +42,6 @@ export const series: Serie[] = [
     nota: 8.1
   },
   {
-    slug: 'peaky-blinders',
-    titulo: 'Peaky Blinders',
-    imagem: '/img/peaky-blinders.jpg',
-    genero: ['Ficção Histórica', 'Crime', 'Drama'],
-    sinopse: 'Peaky Blinders é uma série de TV britânica que se passa na década de 1920 em Birmingham, Inglaterra, e acompanha a família Shelby, uma gangue criminosa liderada pelo ambicioso e carismático Thomas "Tommy" Shelby.',
-    temporadas: 6,
-    ano: 2013,
-    nota: 8.7
-  },
-  {
     slug: 'breaking-bad',
     titulo: 'Breaking Bad',
     imagem: '/img/breaking-bad.jpg',
@@ -72,36 +62,6 @@ export const series: Serie[] = [
     nota: 8.6
   },
   {
-    slug: 'dexter',
-    titulo: 'Dexter',
-    imagem: '/img/dexter.jpg',
-    genero: ['Crime', 'Drama', 'Mistério'],
-    sinopse: 'Renomado funcionário da Polícia de Miami, Dexter esconde de todos uma segunda identidade: ele é um assassino em série que mata os criminosos que a polícia não consegue prender.',
-    temporadas: 8,
-    ano: 2006,
-    nota: 8.6
-  },
-   {
-    slug: 'silo',
-    titulo: 'Silo',
-    imagem: '/img/silo.jpg',
-    genero: ['Distopia', 'Drama', 'Ficção Científica'],
-    sinopse: 'Silo é uma série distópica de ficção científica que se passa num futuro pós-apocalíptico, onde a humanidade sobrevive em um silo subterrâneo devido à toxicidade da superfície. A série acompanha Juliette, uma engenheira que, ao investigar a morte de um colega, descobre segredos chocantes sobre o silo e as regras que governam a vida dentro dele.',
-    temporadas: 2,
-    ano: 2023,
-    nota: 8.1
-  },
-   {
-    slug: 'fallout',
-    titulo: 'Fallout',
-    imagem: '/img/fallout.jpg',
-    genero: ['Ação', 'Aventura', 'Ficção Científica', 'Drama'],
-    sinopse: 'Baseada em uma das maiores séries de videogame de todos os tempos, Fallout é a história de quem tem e de quem não tem, em um mundo onde não existe quase nada para se ter. 200 anos após o apocalipse, uma habitante pacífica de um agradável refúgio é forçada a se aventurar na superfície e fica chocada quando descobre a terra devastada que a espera.',
-    temporadas: 2,
-    ano: 2024,
-    nota: 8.3
-  },
-  {
     slug: 'operacao-lioness',
     titulo: 'Operação Lioness',
     imagem: '/img/operacao-lioness.jpg',
@@ -120,6 +80,36 @@ export const series: Serie[] = [
     temporadas: 3,
     ano: 2022,
     nota: 7.8
+  },
+    {
+    slug: 'silo',
+    titulo: 'Silo',
+    imagem: '/img/silo.jpg',
+    genero: ['Distopia', 'Drama', 'Ficção Científica'],
+    sinopse: 'Silo é uma série distópica de ficção científica que se passa num futuro pós-apocalíptico, onde a humanidade sobrevive em um silo subterrâneo devido à toxicidade da superfície. A série acompanha Juliette, uma engenheira que, ao investigar a morte de um colega, descobre segredos chocantes sobre o silo e as regras que governam a vida dentro dele.',
+    temporadas: 2,
+    ano: 2023,
+    nota: 8.1
+  },
+  {
+    slug: 'dexter',
+    titulo: 'Dexter',
+    imagem: '/img/dexter.jpg',
+    genero: ['Crime', 'Drama', 'Mistério'],
+    sinopse: 'Renomado funcionário da Polícia de Miami, Dexter esconde de todos uma segunda identidade: ele é um assassino em série que mata os criminosos que a polícia não consegue prender.',
+    temporadas: 8,
+    ano: 2006,
+    nota: 8.6
+  },
+   {
+    slug: 'fallout',
+    titulo: 'Fallout',
+    imagem: '/img/fallout.jpg',
+    genero: ['Ação', 'Aventura', 'Ficção Científica', 'Drama'],
+    sinopse: 'Baseada em uma das maiores séries de videogame de todos os tempos, Fallout é a história de quem tem e de quem não tem, em um mundo onde não existe quase nada para se ter. 200 anos após o apocalipse, uma habitante pacífica de um agradável refúgio é forçada a se aventurar na superfície e fica chocada quando descobre a terra devastada que a espera.',
+    temporadas: 2,
+    ano: 2024,
+    nota: 8.3
   },
   {
     slug: 'ruptura',
