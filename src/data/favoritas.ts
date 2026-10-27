@@ -1,0 +1,32 @@
+import type { Favorita } from '../types/serie'
+
+// Mesma ordem da galeria. O id é o da série no TMDB.
+export const favoritas: Favorita[] = [
+  { id: 18165, slug: 'the-vampire-diaries', titulo: 'The Vampire Diaries', imagem: '/img/tvd.jpg' },
+  { id: 1413, slug: 'american-horror-story', titulo: 'American Horror Story', imagem: '/img/ahs.jpg' },
+  { id: 42295, slug: 'hemlock-grove', titulo: 'Hemlock Grove', imagem: '/img/hemlock-grove.jpg' },
+  { id: 1402, slug: 'the-walking-dead', titulo: 'The Walking Dead', imagem: '/img/twd.jpg' },
+  { id: 1396, slug: 'breaking-bad', titulo: 'Breaking Bad', imagem: '/img/breaking-bad.jpg' },
+  { id: 100088, slug: 'the-last-of-us', titulo: 'The Last of Us', imagem: '/img/tlo.webp' },
+  { id: 113962, slug: 'operacao-lioness', titulo: 'Operação Lioness', imagem: '/img/operacao-lioness.jpg' },
+  { id: 124364, slug: 'origem', titulo: 'Origem', imagem: '/img/origem.jpg' },
+  { id: 125988, slug: 'silo', titulo: 'Silo', imagem: '/img/silo.jpg' },
+  { id: 1405, slug: 'dexter', titulo: 'Dexter', imagem: '/img/dexter.jpg' },
+  { id: 106379, slug: 'fallout', titulo: 'Fallout', imagem: '/img/fallout.jpg' },
+  { id: 95396, slug: 'ruptura', titulo: 'Ruptura', imagem: '/img/ruptura.jpg' },
+  { id: 245927, slug: 'paradise', titulo: 'Paradise', imagem: '/img/paradise.jpg' },
+  { id: 94997, slug: 'a-casa-do-dragao', titulo: 'A Casa do Dragão', imagem: '/img/a-casa-do-dragao.jpg' },
+  { id: 67178, slug: 'o-justiceiro', titulo: 'O Justiceiro', imagem: '/img/o-justiceiro.jpg' },
+  { id: 108978, slug: 'reacher', titulo: 'Reacher', imagem: '/img/reacher.jpg' },
+  { id: 120911, slug: 'a-lista-terminal', titulo: 'A Lista Terminal', imagem: '/img/a-lista-terminal.jpg' },
+  { id: 76479, slug: 'the-boys', titulo: 'The Boys', imagem: '/img/the-boys.jpg' },
+  { id: 95557, slug: 'invencivel', titulo: 'Invencível', imagem: '/img/invencivel.jpg' },
+  { id: 82856, slug: 'o-mandaloriano', titulo: 'O Mandaloriano', imagem: '/img/o-mandaloriano.jpg' },
+  { id: 85271, slug: 'wandavision', titulo: 'WandaVision', imagem: '/img/wandavision.jpg' },
+  { id: 84958, slug: 'loki', titulo: 'Loki', imagem: '/img/loki.jpg' },
+  { id: 1429, slug: 'attack-on-titan', titulo: 'Attack on Titan', imagem: '/img/attack-on-titan.jpg' },
+  { id: 85937, slug: 'demon-slayer', titulo: 'Demon Slayer', imagem: '/img/demon-slayer.jpg' },
+  { id: 95479, slug: 'jujutsu-kaisen', titulo: 'Jujutsu Kaisen', imagem: '/img/jujutsu-kaisen.jpg' },
+  { id: 123548, slug: 'castlevania-noturno', titulo: 'Castlevania: Noturno', imagem: '/img/castlevania-noturno.jpg' },
+  { id: 135934, slug: 'the-legend-of-vox-machina', titulo: 'The Legend of Vox Machina', imagem: '/img/vox-machina.jpg' },
+]
