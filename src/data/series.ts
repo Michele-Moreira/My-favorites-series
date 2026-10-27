@@ -142,6 +142,26 @@ export const series: Serie[] = [
     nota: 8.6
   },
   {
+    slug: 'jujutsu-kaisen',
+    titulo: 'Jujutsu Kaisen',
+    imagem: '/img/jujutsu-kaisen.jpg',
+    genero: ['Animação', 'Ação', 'Aventura', 'Fantasia'],
+    sinopse: 'Sofrimento, arrependimento, vergonha: os sentimentos negativos dos humanos tornam-se Maldições, causando terríveis acidentes que podem levar até mesmo à morte. Para salvar amigos que estavam sendo atacados por Maldições, Yuji Itadori engole o dedo do Ryomen-Sukuna, absorvendo sua Maldição. Ele então decide se matricular no Colégio Técnico de Feitiçaria de Tóquio, uma organização que combate as Maldições.',
+    temporadas: 3,
+    ano: 2020,
+    nota: 8.5
+  },
+  {
+    slug: 'dexter',
+    titulo: 'Dexter',
+    imagem: '/img/dexter.jpg',
+    genero: ['Crime', 'Drama', 'Mistério'],
+    sinopse: 'Renomado funcionário da Polícia de Miami, Dexter esconde de todos uma segunda identidade: ele é um assassino em série que mata os criminosos que a polícia não consegue prender.',
+    temporadas: 8,
+    ano: 2006,
+    nota: 8.6
+  },
+  {
     slug: 'the-legend-of-vox-machina',
     titulo: 'The Legend of Vox Machina',
     imagem: '/img/vox-machina.jpg',
