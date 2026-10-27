@@ -1,7 +1,7 @@
 export type Serie = {
   slug: string        // vai virar o endereço: /serie/loki
   titulo: string
-  imagem: string      // ex.: "/img/loki.jfif"
+  imagem: string      // ex.: "/img/loki.jpg"
   genero: string[]      // ex.: ["Ação", "Aventura", "Ficção Científica"]
   sinopse: string
   temporadas: number
