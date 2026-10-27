@@ -84,7 +84,7 @@ export const series: Serie[] = [
    {
     slug: 'silo',
     titulo: 'Silo',
-    imagem: '/img/silo-2023.jpg',
+    imagem: '/img/silo.jpg',
     genero: ['Distopia', 'Drama', 'Ficção Científica'],
     sinopse: 'Silo é uma série distópica de ficção científica que se passa num futuro pós-apocalíptico, onde a humanidade sobrevive em um silo subterrâneo devido à toxicidade da superfície. A série acompanha Juliette, uma engenheira que, ao investigar a morte de um colega, descobre segredos chocantes sobre o silo e as regras que governam a vida dentro dele.',
     temporadas: 2,
