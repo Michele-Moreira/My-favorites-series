@@ -245,18 +245,22 @@ header {
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
-    color: var(--cor-texto-suave);
-    transition: color 0.3s ease;
+    color: var(--cor-texto);
+    padding: 8px 18px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 999px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
 .ficha-voltar:hover {
-    color: var(--cor-texto);
+    background: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+    transform: scale(1.05);
 }
 
 .ficha-voltar:focus-visible {
     outline: 2px solid var(--cor-destaque);
     outline-offset: 4px;
-    border-radius: 4px;
 }
 
 .ficha-info h1 {
