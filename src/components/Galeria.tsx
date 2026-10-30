@@ -3,7 +3,7 @@ import { series } from '../data/series'
 import SerieCard from './SerieCard'
 import { semAcento } from '../utils/semAcento'
 
-const generos = [...new Set(series.flatMap((serie) => serie.genero))].sort()
+const generos = [...new Set(series.flatMap((serie) => serie.genero))].sort((a, b) => a.localeCompare(b, 'pt-BR'))
 
 function Galeria() {
   const [parametros, setParametros] = useSearchParams()

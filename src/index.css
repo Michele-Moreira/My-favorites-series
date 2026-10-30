@@ -46,6 +46,7 @@ header {
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;
+    color: inherit;
 }
 
 .texto-negrito:hover {
@@ -58,6 +59,10 @@ header {
     gap: 20px;
     font-size: 1.3rem;
     color: var(--cor-texto)
+}
+
+.menu-direita .active {
+    border-bottom: 2px solid currentColor;
 }
 
 /* ========== GALERIA DE SÉRIES ========== */
@@ -183,6 +188,41 @@ header {
     max-width: 400px;
 }
 
+/* Sem suporte, a lista continua com o visual padrão do navegador */
+@supports (appearance: base-select) {
+    .filtros select,
+    .filtros select::picker(select) {
+        appearance: base-select;
+    }
+
+    .filtros select::picker(select) {
+        background: var(--cor-fundo);
+        border: 2px solid var(--cor-destaque);
+        border-radius: 8px;
+        margin-top: 4px;
+        scrollbar-color: var(--cor-destaque) transparent;
+    }
+
+    .filtros select::picker-icon {
+        color: var(--cor-destaque);
+    }
+
+    .filtros option {
+        color: var(--cor-texto);
+        padding: 6px 14px;
+    }
+
+    .filtros option:hover,
+    .filtros option:checked {
+        background: var(--cor-destaque);
+        color: var(--cor-texto);
+    }
+
+    .filtros option::checkmark {
+        display: none;
+    }
+}
+
 .sem-resultado {
     color: var(--cor-texto);
     font-size: 1.2rem;
@@ -240,18 +280,22 @@ header {
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
-    color: var(--cor-texto-suave);
-    transition: color 0.3s ease;
+    color: var(--cor-texto);
+    padding: 8px 18px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 999px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
 .ficha-voltar:hover {
-    color: var(--cor-texto);
+    background: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+    transform: scale(1.05);
 }
 
 .ficha-voltar:focus-visible {
     outline: 2px solid var(--cor-destaque);
     outline-offset: 4px;
-    border-radius: 4px;
 }
 
 .ficha-info h1 {
