@@ -1,4 +1,4 @@
-import { Link } from 'react-router'
+import { Link, useLocation } from 'react-router'
 import { useSerie } from '../hooks/useSerie'
 import { favoritas } from '../data/favoritas'
 import Carregando from './Carregando'
@@ -11,6 +11,9 @@ type Props = {
 
 function FichaSerie({ id }: Props) {
   const estado = useSerie(id)
+  const { state } = useLocation()
+  // Quem chega por link direto não veio da galeria, então volta pra página inicial
+  const voltarPara: string = state?.voltarPara ?? '/'
 
   if (estado.tipo === 'carregando') {
     return <Carregando />
@@ -44,7 +47,7 @@ function FichaSerie({ id }: Props) {
         )}
 
         <div className="ficha-info">
-          <Link className="ficha-voltar" to="/">← Voltar</Link>
+          <Link className="ficha-voltar" to={voltarPara}>← Voltar</Link>
           <h1>{titulo}</h1>
           <p className="ficha-detalhes">{detalhes.join(' · ')}</p>
 

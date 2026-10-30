@@ -1,10 +1,11 @@
-import { Navigate, useParams } from 'react-router'
+import { Navigate, useLocation, useParams } from 'react-router'
 import { favoritas } from '../data/favoritas'
 import FichaSerie from '../components/FichaSerie'
 import MensagemErro from '../components/MensagemErro'
 
 function SerieDetalhe() {
   const { id } = useParams()
+  const { state } = useLocation()
   const idNumerico = Number(id)
 
   // Endereço antigo (/serie/loki): troca pelo novo (/serie/84958) sem deixar o antigo no histórico
@@ -15,7 +16,7 @@ function SerieDetalhe() {
       return <MensagemErro mensagem="Série não encontrada." />
     }
 
-    return <Navigate to={`/serie/${favorita.id}`} replace />
+    return <Navigate to={`/serie/${favorita.id}`} state={state} replace />
   }
 
   // A key faz a ficha começar do zero ao trocar de série
