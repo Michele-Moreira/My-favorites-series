@@ -1,11 +1,14 @@
+import { Link, NavLink } from 'react-router'
+
 function Header() {
   return (
     <header>
-      <div><strong>MINHAS SÉRIES FAVORITAS</strong></div>
+      <div className="texto-negrito">
+        <Link to="/" className="texto-negrito">MINHAS SÉRIES FAVORITAS</Link>
+      </div>
 
       <div className="menu-direita">
-        <span className="texto-negrito">CRÍTICAS</span>
-        <span className="texto-negrito">DIRETORES</span>
+        <NavLink to="/criticas" className="texto-negrito">CRÍTICAS</NavLink>
       </div>
     </header>
   )

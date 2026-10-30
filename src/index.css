@@ -46,6 +46,7 @@ header {
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;
+    color: inherit;
 }
 
 .texto-negrito:hover {
@@ -58,6 +59,10 @@ header {
     gap: 20px;
     font-size: 1.3rem;
     color: var(--cor-texto)
+}
+
+.menu-direita .active {
+    border-bottom: 2px solid currentColor;
 }
 
 /* ========== GALERIA DE SÉRIES ========== */
