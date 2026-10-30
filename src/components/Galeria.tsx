@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useSearchParams } from 'react-router'
 import { series } from '../data/series'
 import SerieCard from './SerieCard'
 import { semAcento } from '../utils/semAcento'
@@ -6,8 +6,21 @@ import { semAcento } from '../utils/semAcento'
 const generos = [...new Set(series.flatMap((serie) => serie.genero))].sort()
 
 function Galeria() {
-  const [busca, setBusca] = useState('')
-  const [genero, setGenero] = useState('')
+  const [parametros, setParametros] = useSearchParams()
+  const busca = parametros.get('busca') ?? ''
+  const genero = parametros.get('genero') ?? ''
+
+  // replace: sem ele, cada letra digitada viraria um passo no histórico do navegador
+  function mudarFiltro(nome: string, valor: string) {
+    setParametros((atuais) => {
+      if (valor) {
+        atuais.set(nome, valor)
+      } else {
+        atuais.delete(nome)
+      }
+      return atuais
+    }, { replace: true })
+  }
 
   const seriesFiltradas = series.filter((serie) => {
     const bateBusca = semAcento(serie.titulo).includes(semAcento(busca))
@@ -23,12 +36,12 @@ function Galeria() {
           placeholder="Buscar série..."
           aria-label="Buscar série pelo nome"
           value={busca}
-          onChange={(e) => setBusca(e.target.value)}
+          onChange={(e) => mudarFiltro('busca', e.target.value)}
         />
         <select
           aria-label="Filtrar por gênero"
           value={genero}
-          onChange={(e) => setGenero(e.target.value)}
+          onChange={(e) => mudarFiltro('genero', e.target.value)}
         >
           <option value="">Todos os gêneros</option>
           {generos.map((g) => (
