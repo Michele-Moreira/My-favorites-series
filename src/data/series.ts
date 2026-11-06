@@ -191,16 +191,6 @@ export const series: Serie[] = [
     ano: 2021,
     nota: 8.7
   },
-  {
-    slug: 'o-mandaloriano',
-    titulo: 'O Mandaloriano',
-    imagem: '/img/o-mandaloriano.jpg',
-    genero: ['Ficção Científica', 'Ação', 'Aventura'],
-    sinopse: 'A saga de um guerreiro solitário, que também é um mercenário e pistoleiro, viajando pelos territórios esquecidos e marginais do espaço, logo após a queda do Império e antes da criação da temida Primeira Ordem.',
-    temporadas: 3,
-    ano: 2019,
-    nota: 8.6
-  },
    {
     slug: 'wandavision',
     titulo: 'WandaVision',
@@ -220,6 +210,16 @@ export const series: Serie[] = [
     temporadas: 2,
     ano: 2021,
     nota: 8.2
+  },
+  {
+    slug: 'o-mandaloriano',
+    titulo: 'O Mandaloriano',
+    imagem: '/img/o-mandaloriano.jpg',
+    genero: ['Ficção Científica', 'Ação', 'Aventura'],
+    sinopse: 'A saga de um guerreiro solitário, que também é um mercenário e pistoleiro, viajando pelos territórios esquecidos e marginais do espaço, logo após a queda do Império e antes da criação da temida Primeira Ordem.',
+    temporadas: 3,
+    ano: 2019,
+    nota: 8.6
   },
   {
     slug: 'attack-on-titan',
@@ -270,15 +270,5 @@ export const series: Serie[] = [
     temporadas: 2,
     ano: 2023,
     nota: 7.5
-  },
-  {
-    slug: 'the-legend-of-vox-machina',
-    titulo: 'The Legend of Vox Machina',
-    imagem: '/img/vox-machina.jpg',
-    genero: ['Animação', 'Ação', 'Aventura', 'Fantasia'],
-    sinopse: 'Desordeiros e maltrapilhos, são desajustados que viraram mercenários. O grupo Vox Machina está mais interessado em dinheiro fácil e cerveja barata do que em proteger o reino. Mas quando o reino é ameaçado pelo mal, esses encrenqueiros percebem que são os únicos capazes de restaurar a justiça. O que começou como um serviço simples agora é a história de origem dos mais novos heróis de Exandria.',
-    temporadas: 4,
-    ano: 2022,
-    nota: 8.4
   },
 ]
