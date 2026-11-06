@@ -25,6 +25,7 @@ export const favoritas: Favorita[] = [
   { id: 85271, slug: 'wandavision', titulo: 'WandaVision', imagem: '/img/wandavision.jpg' },
   { id: 84958, slug: 'loki', titulo: 'Loki', imagem: '/img/loki.jpg' },
   { id: 1429, slug: 'attack-on-titan', titulo: 'Attack on Titan', imagem: '/img/attack-on-titan.jpg' },
+  { id: 127532, slug: 'solo-leveling', titulo: 'Solo Leveling', imagem: '/img/solo-leveling.jpg' },
   { id: 85937, slug: 'demon-slayer', titulo: 'Demon Slayer', imagem: '/img/demon-slayer.jpg' },
   { id: 95479, slug: 'jujutsu-kaisen', titulo: 'Jujutsu Kaisen', imagem: '/img/jujutsu-kaisen.jpg' },
   { id: 123548, slug: 'castlevania-noturno', titulo: 'Castlevania: Noturno', imagem: '/img/castlevania-noturno.jpg' },
