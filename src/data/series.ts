@@ -232,6 +232,16 @@ export const series: Serie[] = [
     nota: 9.1
   },
   {
+    slug: 'solo-leveling',
+    titulo: 'Solo Leveling',
+    imagem: '/img/solo-leveling.jpg',
+    genero: ['Animação', 'Ação', 'Aventura', 'Fantasia'],
+    sinopse: 'Há mais de uma década, surgiu uma misteriosa passagem chamada "portal", que conecta este mundo a uma dimensão diferente, o que fez com que pessoas despertassem poderes únicos… e essas pessoas são chamadas de "caçadores". Os caçadores usam seus poderes sobre-humanos para conquistar masmorras dentro dos portais e assim ganhar a vida. Sung Jinwoo, um caçador de nível baixo, é considerado o caçador mais fraco de toda a humanidade. Certo dia, ele se depara com uma "masmorra dupla", que tem uma masmorra de nível alto escondida dentro de uma masmorra de nível baixo. Diante de um Jinwoo gravemente ferido, surge uma misteriosa missão! À beira da morte, Jinwoo decide aceitar essa missão, tornando-se assim a única pessoa capaz de subir de nível!',
+    temporadas: 2,
+    ano: 2024,
+    nota: 8.7
+  },
+  {
     slug: 'demon-slayer',
     titulo: 'Demon Slayer',
     imagem: '/img/demon-slayer.jpg',
